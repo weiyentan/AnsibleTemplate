@@ -12,14 +12,14 @@
     <tags></tags>
   </metadata>
   <parameters></parameters>
-  <content>
-    <file source = '' destination ='libary' /> 
+  <content>   
     <file source = '' destination ='defaults' />
     <file source = '' destination ='tasks' />
     <file source = '' destination ='vars' />
-    <file source = '' destination ='libary' />
+    <file source = '' destination ='library' />
     <file source = 'library\main.yml' destination ='library\main.yml' />
     <file source = 'defaults\main.yml' destination ='defaults\main.yml' />
     <file source = 'tasks\main.yml' destination ='tasks\main.yml' />
+
   </content>
 </plasterManifest>

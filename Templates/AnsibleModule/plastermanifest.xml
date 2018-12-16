@@ -3,11 +3,11 @@
   schemaVersion="1.1"
   templateType="Item" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>AnsibleRole</name>
+    <name>AnsibleModule</name>
     <id>0b837922-4de0-415f-b874-9511273d33a2</id>
     <version>1.0.0</version>
-    <title>SampleAnsibleRole</title>
-    <description>Example</description>
+    <title>Sample Ansible Module Template</title>
+    <description>This is the scaffolding template for an Ansible module</description>
     <author></author>
     <tags></tags>
   </metadata>
