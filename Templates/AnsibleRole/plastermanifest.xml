@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>AnsibleRole</name>
+    <id>dfa81779-f695-45aa-a693-a9d47f13fcbe</id>
+    <version>1.0.0</version>
+    <title>SampleAnsibleRole</title>
+    <description>Example</description>
+    <author></author>
+    <tags></tags>
+  </metadata>
+  <parameters></parameters>
+  <content>
+    <file source = '' destination ='libary' /> 
+    <file source = '' destination ='defaults' />
+    <file source = '' destination ='tasks' />
+    <file source = '' destination ='vars' />
+    <file source = '' destination ='libary' />
+    <file source = 'library\main.yml' destination ='library\main.yml' />
+    <file source = 'defaults\main.yml' destination ='defaults\main.yml' />
+    <file source = 'tasks\main.yml' destination ='tasks\main.yml' />
+  </content>
+</plasterManifest>

@@ -29,19 +29,19 @@ param
 	[Parameter(Mandatory = $true,
 			   Position = 1)]
 	[ValidateSet('Role', 'Module')]
-	[string]$type = 'Role'
+	[string]$type
 )
 
 Import-Module "$PSScriptRoot\HelperModules\Plaster\1.1.3\Plaster.psm1"
 
-if ($type -eq 'Role')
+if ($PSBoundParameters.ContainsValue('Role'))
 {
 	Invoke-Plaster -templatepath $PSScriptRoot\Templates\AnsibleRole -destination $Destination
 	
 	
 }
 
-if ($type -eq 'module')
+if ($PSBoundParameters.ContainsValue('Module'))
 {
 	Invoke-Plaster -templatepath $PSScriptRoot\Templates\AnsibleModule -destination $Destination
 	

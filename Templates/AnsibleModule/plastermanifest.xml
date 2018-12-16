@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Item" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>AnsibleRole</name>
+    <id>0b837922-4de0-415f-b874-9511273d33a2</id>
+    <version>1.0.0</version>
+    <title>SampleAnsibleRole</title>
+    <description>Example</description>
+    <author></author>
+    <tags></tags>
+  </metadata>
+  <parameters></parameters>
+  <content>
+    <file source = 'win_template.ps1' destination ='win_template.ps1' />
+    <file source = 'win_template.py' destination ='win_template.py' />
+  </content>
+</plasterManifest>
