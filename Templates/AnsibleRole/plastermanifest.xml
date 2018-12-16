@@ -17,7 +17,6 @@
     <file source = '' destination ='tasks' />
     <file source = '' destination ='vars' />
     <file source = '' destination ='library' />
-    <file source = 'library\main.yml' destination ='library\main.yml' />
     <file source = 'defaults\main.yml' destination ='defaults\main.yml' />
     <file source = 'tasks\main.yml' destination ='tasks\main.yml' />
 

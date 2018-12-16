@@ -1,1 +1,5 @@
 ---
+  - name: Determine if  folder for Baseline definition file exists
+    win_example:
+      parameter1: "{{ example var }}"
+      parameter2: true
