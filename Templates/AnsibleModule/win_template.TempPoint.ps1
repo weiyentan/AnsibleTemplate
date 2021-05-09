@@ -23,57 +23,35 @@ $list = Get-AnsibleParam -obj $params -name "list" -type "list"
 $choices = Get-AnsibleParam -obj $params -name "choices" -type "str" -default "present" -validateset "absent", "present"
 
 $result = @{
-	changed   = $false
-	someparam = new-object -type psobject #example of structured data
+    changed = $false
+    someparam = new-object -type psobject #example of structured data
 }
 $collection = @() #build a data collection for structureddata
-$badcollection = @()
-if ($diff_mode)
-{
-	$result.diff = @{ }
+
+if ($diff_mode) {
+    $result.diff = @{}
 }
 
-if ($state -eq 'present')
-{
-	if (-not ($checkmode))
-	{
-		#this allows  for dry runs
-		try
-		{
-			Start-Function -erroraction Stop
-			$result.changed = $true
-			$obj = new-object -TypeName psobject -Property @{
-				#build object so we can add to result data structure
-				state = ''
-				param1 = ''
-				
-			}
-			Set-Attr -obj $obj -name state -value "success"
-			Set-Attr -obj $obj -name param1 -value "example"
-			$collection +$obj
-		}
-		catch
-		{
-			$obj = new-object -TypeName psobject -Property @{
-				#build object so we can add to result data structure
-				state  = ''
-				param1 = ''
-				
-			}
-			Set-Attr -obj $obj -name state -value "failure"
-			Set-Attr -obj $obj -name param1 -value "example"
-			$badcollection += $obj
-		}
-	}
-	
-	
+if ($state -eq 'present'){
+    if(-not($checkmode)){ #this allows  for dry runs
+        try {
+        Start-Function -erroraction Stop
+        $obj =new-object -TypeName psobject -Property @{ #build object so we can add to result data structure
+        state = 'true'
+            
+        }
+    }catch{
+
+        }
+       
+
+    }
 }
-Set-Attr -obj $result.param -name success -value $collection
-Set-Attr -obj $result.param -name failure  -value $badcollection
 # code goes here
 
 # you can add/set new result objects with
-
+$result.changed = $true
+$result.new_result = "Hi"
 
 Exit-Json -obj $result
 

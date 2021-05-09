@@ -1,5 +1,5 @@
 ---
-  - name: Determine if  folder for Baseline definition file exists
+  - name: Example of Role 
     win_example:
       parameter1: "{{ example var }}"
       parameter2: true
