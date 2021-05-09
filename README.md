@@ -14,3 +14,10 @@ C:\PS> New-AnsibleTemplate -Destination C:\Git\Ansible\Roles\configure-iis\libra
 
 ```
 This creates an ansible library  that sits in the role configure-iis under the library directory. It is primary for windows templates.
+
+
+```
+C:\PS> mkdir ~\git\example-collection
+C:\PS> New-AnsibleTemplate -destination ~\git\example-collection -type Collections
+```
+This creates scaffolding for Ansible collections.
