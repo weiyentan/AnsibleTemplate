@@ -68,7 +68,7 @@ function New-AnsibleTemplate
 	if ($PSBoundParameters.ContainsValue('Collections'))
 	{
 		
-		Invoke-Plaster -templatepath $PSScriptRoot\Templates\AnsibleProject -destination $Destination
+		Invoke-Plaster -templatepath $PSScriptRoot\Templates\AnsibleCollections -destination $Destination
 		
 	}
 }
