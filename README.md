@@ -1,4 +1,4 @@
-# AnsibleRoleTemplate
+# AnsibleTemplate
 This is a PowerShell module to have an equivalent of ansible-init. It is a way to scaffold Ansible Playbooks/Ansible Libraries and Ansible Collections. It uses Plaster as a helper module to achieve the tasks being done.
 
 Here are some examples of how to use it:
