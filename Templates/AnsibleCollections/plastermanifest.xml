@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>AnsiblePlaybook</name>
+    <id>dfa81779-f695-45aa-a693-a9d47f13fcbe</id>
+    <version>1.0.0</version>
+    <title>SampleAnsiblePlaybookTemplate</title>
+    <description>Sample template of Ansible Playbook</description>
+    <author></author>
+    <tags></tags>
+  </metadata>
+  <parameters></parameters>
+  <content>   
+    <file source = '' destination ='docs' />
+    <file source = '' destination ='roles' />
+    <file source = '' destination ='meta' />
+    <file source = '' destination ='plugins' />
+    <file source = '' destination ='plugins\modules' />
+    <file source = '' destination ='plugins\inventory' />
+    <file source = '' destination ='playbooks' />
+    <file source = '' destination ='playbooks\files' />
+    <file source = '' destination ='playbooks\vars' />
+    <file source = '' destination ='playbooks\templates' />
+    <file source = '' destination ='playbooks\tasks' />
+    <file source = '' destination ='playbooks\tests' />
+    <file source = 'playbook_template.yml' destination ='playbooks\playbook_template.yml' />
+    <file source = 'blank_main.yml' destination ='playbooks\defaults\main.yml' />
+    <file source = 'blank_main.yml' destination ='vars\main.yml' />
+  </content>
+</plasterManifest>
