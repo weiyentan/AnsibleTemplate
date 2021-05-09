@@ -14,10 +14,12 @@
   <parameters></parameters>
   <content>   
     <file source = '' destination ='defaults' />
+    <file source = '' destination = 'meta' />
     <file source = '' destination ='tasks' />
     <file source = '' destination ='vars' />
     <file source = '' destination ='library' />
     <file source = 'defaults\main.yml' destination ='defaults\main.yml' />
+    <file source = 'meta\main.yml' destination ='meta\main.yml' />
     <file source = 'tasks\main.yml' destination ='tasks\main.yml' />
 
   </content>
