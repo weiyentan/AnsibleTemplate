@@ -40,7 +40,7 @@ function New-AnsibleTemplate
 		[string]$Destination,
 		[Parameter(Mandatory = $true,
 				   Position = 1)]
-		[ValidateSet('Role', 'Module', 'Playbooks')]
+		[ValidateSet('Role', 'Module', 'Playbooks', 'Collections')]
 		[string]$type
 	)
 	
@@ -59,6 +59,13 @@ function New-AnsibleTemplate
 	}
 	
 	if ($PSBoundParameters.ContainsValue('Playbooks'))
+	{
+		
+		Invoke-Plaster -templatepath $PSScriptRoot\Templates\AnsibleProject -destination $Destination
+		
+	}
+
+	if ($PSBoundParameters.ContainsValue('Collections'))
 	{
 		
 		Invoke-Plaster -templatepath $PSScriptRoot\Templates\AnsibleProject -destination $Destination
